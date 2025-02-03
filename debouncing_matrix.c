@@ -5,12 +5,12 @@
 #include "hardware/pio.h"
 #include "debouncing_matrix.pio.h" 
 
-#define NUM_PIXELS 25       // Definição do número de LEDs da matriz 5X5
-#define LEDS_PIN 7          // Definição da porta GPIO da matriz de LEDs 5X5
-#define LED_PIN_RED 13      // Definição da porta GPIO do led vermelho do conjunto RGB 
-#define BUTTON_A 5          // Definição da porta GPIO do botão A
-#define BUTTON_B 6          // Definição da porta GPIO do botão B
-#define tempo 100           // Definição do intervalo de acordo com o qual o LED piscará
+#define NUM_PIXELS 25       //Definição do número de LEDs da matriz 5X5
+#define LEDS_PIN 7          //Definição da porta GPIO da matriz de LEDs 5X5
+#define LED_PIN_RED 13      //Definição da porta GPIO do led vermelho do conjunto RGB 
+#define BUTTON_A 5          //Definição da porta GPIO do botão A
+#define BUTTON_B 6          //Definição da porta GPIO do botão B
+#define tempo 100           //Definição do intervalo de acordo com o qual o LED piscará
 
 // Definição do contador e da marcação de tempo utilizados para efetuar o debouncing
 static volatile uint num = 0;
